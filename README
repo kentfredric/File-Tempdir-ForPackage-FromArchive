@@ -6,23 +6,23 @@ VERSION
     version 0.1.0
 
 SYNOPSIS
-            use File::Tempdir::ForPackage::FromArchive;
+     use File::Tempdir::ForPackage::FromArchive;
 
-            my $stash = File::Tempdir::ForPackage::FromArchive->new(
-                    archive => 'path/to/archive.tar.gz',
-            );
-            while(1){
-                    $stash->run_once_in(sub{
-                            #  Disk thrashes here as
-                            #  archive is repeatedly checked out,
-                            #  modified, then erased.
-                    });
-            }
+     my $stash = File::Tempdir::ForPackage::FromArchive->new(
+      archive => 'path/to/archive.tar.gz',
+     );
+     while(1){
+      $stash->run_once_in(sub{
+       #  Disk thrashes here as
+       #  archive is repeatedly checked out,
+       #  modified, then erased.
+      });
+     }
 
 DESCRIPTION
-    Most features of this module are provided by File::Tempdir::ForPackage,
-    except that empty Tempdirs are constructed containing the contents of
-    the specified archive with Archive-Any.
+    Most features of this module are provided by
+    File::Tempdir::"ForPackage", except that empty Tempdirs are constructed
+    containing the contents of the specified archive with Archive-Any.
 
     This is useful if you have some sort of mutable directory state that you
     need to bundle with your distribution for testing as a nested archive,
