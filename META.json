@@ -70,6 +70,14 @@
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "homepage" : "https://github.com/kentfredric/File-Tempdir-ForPackage-FromArchive",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/kentfredric/File-Tempdir-ForPackage-FromArchive.git",
+         "web" : "https://github.com/kentfredric/File-Tempdir-ForPackage-FromArchive"
+      }
+   },
    "version" : "0.1.0",
    "x_BuiltWith" : {
       "modules" : {

@@ -35,6 +35,9 @@ requires:
   perl: v5.10.0
   strict: 0
   warnings: 0
+resources:
+  homepage: https://github.com/kentfredric/File-Tempdir-ForPackage-FromArchive
+  repository: https://github.com/kentfredric/File-Tempdir-ForPackage-FromArchive.git
 version: 0.1.0
 x_BuiltWith:
   modules:
