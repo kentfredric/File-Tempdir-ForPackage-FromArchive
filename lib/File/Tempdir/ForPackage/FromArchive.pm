@@ -33,6 +33,16 @@ use Moo;
 use Sub::Quote qw( quote_sub );
 extends 'File::Tempdir::ForPackage';
 
+=attr archive
+
+Mandatory path to the archive to extract.
+
+  my $instance = CLASS->new(
+    archive => "path/to/foo.zip",
+  );
+
+=cut
+
 has archive => (
   is       => ro =>,
   required => 1,
