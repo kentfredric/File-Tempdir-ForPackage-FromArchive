@@ -21,7 +21,7 @@ for my $d (qw( tar_test.tar.gz zip_test.zip )) {
                 sub {
                     pass(Cwd::getcwd);
 		    sub wanted {
-		    	diag( $File::Find::name );
+		    	note( $File::Find::name );
 			return 1;
 		    }
 		    find({ wanted => \&wanted, follow => 0 }, '.');
