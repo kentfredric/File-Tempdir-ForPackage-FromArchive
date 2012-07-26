@@ -1,0 +1,22 @@
+do{ my $x = {
+       'build_requires' => {
+                             'Test::More' => '0.98',
+                             'FindBin' => 0,
+                             'File::Find' => 0,
+                             'File::Temp' => 0,
+                             'Module::Build' => '0.4001',
+                             'Cwd' => 0
+                           },
+       'conflicts' => {},
+       'requires' => {
+                       'warnings' => 0,
+                       'strict' => 0,
+                       'perl' => 'v5.10.0',
+                       'Moo' => 0,
+                       'Archive::Any' => 0,
+                       'Sub::Quote' => 0,
+                       'File::Tempdir::ForPackage' => 0
+                     },
+       'recommends' => {}
+     };
+$x; }
