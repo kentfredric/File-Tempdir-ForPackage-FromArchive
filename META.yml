@@ -21,6 +21,8 @@ name: File-Tempdir-ForPackage-FromArchive
 no_index:
   directory:
     - corpus
+    - t
+    - xt
 provides:
   File::Tempdir::ForPackage::FromArchive:
     file: lib/File/Tempdir/ForPackage/FromArchive.pm
