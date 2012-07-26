@@ -18,6 +18,9 @@ meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: File-Tempdir-ForPackage-FromArchive
+no_index:
+  directory:
+    - corpus
 provides:
   File::Tempdir::ForPackage::FromArchive:
     file: lib/File/Tempdir/ForPackage/FromArchive.pm
@@ -63,6 +66,10 @@ x_BuiltWith:
   uname: 'Linux 3.5.0-gentoo x86_64 GenuineIntel GNU/Linux'
 x_Dist_Zilla:
   plugins:
+    -
+      class: Dist::Zilla::Plugin::MetaNoIndex
+      name: MetaNoIndex
+      version: 4.300020
     -
       class: Dist::Zilla::Plugin::Git::NextVersion
       name: '@Author::KENTNL/Git::NextVersion'

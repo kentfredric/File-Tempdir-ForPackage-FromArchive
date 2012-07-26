@@ -13,6 +13,11 @@
       "version" : "2"
    },
    "name" : "File-Tempdir-ForPackage-FromArchive",
+   "no_index" : {
+      "directory" : [
+         "corpus"
+      ]
+   },
    "prereqs" : {
       "build" : {
          "requires" : {
@@ -101,6 +106,11 @@
    },
    "x_Dist_Zilla" : {
       "plugins" : [
+         {
+            "class" : "Dist::Zilla::Plugin::MetaNoIndex",
+            "name" : "MetaNoIndex",
+            "version" : "4.300020"
+         },
          {
             "class" : "Dist::Zilla::Plugin::Git::NextVersion",
             "name" : "@Author::KENTNL/Git::NextVersion",
